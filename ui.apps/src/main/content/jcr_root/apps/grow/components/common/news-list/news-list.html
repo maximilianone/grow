@@ -1,0 +1,17 @@
+<section class="news_list">
+	<p class="news_title">${properties.title || "News"}</p>
+
+	<section data-sly-use.articleModel="epam.core.models.ArticleContainerModel"></section>
+	<section data-sly-list="${articleModel.articleList}">
+		<a href="${item.url}" class="news_button">
+			<p class="news_text_title">${item.title}</p>
+			<sly data-sly-test="${item.author}">
+				<p class="news_text_author">Author: ${item.author}</p>
+			</sly>
+			<sly data-sly-test="${item.urlToImage}">
+				<image class="news_image" src="${item.urlToImage}"/>
+			</sly>
+			<p class="news_text">${item.description}</p>
+		</a>
+	</section>
+</section>

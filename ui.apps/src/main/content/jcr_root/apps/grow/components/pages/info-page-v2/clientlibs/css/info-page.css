@@ -1,0 +1,23 @@
+body{
+	background-color: #DCD8CF;
+}
+
+.info_block {
+    width: 100%;
+    height: 700px;
+	display: table;
+    border-collapse: separate;
+  	border-spacing: 10px;
+}
+
+#news_block {
+    display: table-cell;
+	width: 69%;
+    height: inherit;
+}
+
+#article_block {
+    display: table-cell;
+	width: 29%;
+    height: inherit;
+}

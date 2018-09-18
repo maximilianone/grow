@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/grow"/>
+    <filter root="/apps/growdefault"/>
+    <filter root="/etc/clientlibs/grow"/>
+    <filter root="/apps/sling" />
+</workspaceFilter>

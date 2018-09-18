@@ -1,0 +1,10 @@
+<section class="info_block">
+    <section id="news_block" data-sly-resource="${@ path='last_news_list', resourceType='grow/components/common/news-list'}"
+             data-sly-attribute.source="https://newsapi.org/v2/everything?domains=wsj.com&apiKey=80b6529f98b843419195ea022760eeb0"></section>
+    <section id="article_block" data-sly-resource="${@ path='left_article-list', resourceType='grow/components/common/article-list'}"
+             data-sly-attribute.source="https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=80b6529f98b843419195ea022760eeb0"></section>
+</section>
+
+<div data-sly-test="${wcmmode.edit || wcmmode.design}">
+    <div data-sly-resource="${'content' @ resourceType='wcm/foundation/components/parsys'}"></div>
+</div>

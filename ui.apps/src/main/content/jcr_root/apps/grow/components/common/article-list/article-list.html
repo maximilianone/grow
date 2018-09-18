@@ -1,0 +1,16 @@
+<section class="article_list"  data-sly-attribute.source="${properties.source}">
+	<p class="articles_title">${properties.title || "Article Title"}</p>
+
+	<section data-sly-use.articleModel="epam.core.models.ArticleContainerModel"></section>
+	<section data-sly-list="${articleModel.articleList}">
+		<a href="${item.url}" class="article_button">
+			<p class="article_text">
+				<sly data-sly-test="${item.urlToImage}">
+					<image class="article_image" src="${item.urlToImage}"/>
+				</sly>
+				${item.title}
+			</p>
+		</a>
+	</section>
+
+</section>
