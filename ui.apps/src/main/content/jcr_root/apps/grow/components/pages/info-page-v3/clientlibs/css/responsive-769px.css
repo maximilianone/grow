@@ -1,0 +1,33 @@
+@media  (min-width: 769px) {
+    .info_block {
+        width: 100%;
+        height: 700px;
+        border-collapse: separate;
+        border-spacing: 10px;
+        position:relative;
+    }
+
+    #first_article_list {
+        position: absolute;
+        left: 1%;
+        top: 0;
+        width: 19%;
+        height: 500px;
+    }
+
+    #news_list {
+        position: absolute;
+        right: 1%;
+        top: 5%;
+        width: 78%;
+        height: 280px;
+    }
+
+    #last_article_list {
+        position: absolute;
+        right: 1%;
+        top: 50%;
+        width: 78%;
+        height: 280px;
+    }
+}

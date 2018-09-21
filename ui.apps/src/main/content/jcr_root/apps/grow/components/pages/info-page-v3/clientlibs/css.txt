@@ -1,3 +1,7 @@
 #base=css
 
-info-page.css
+info_page.css
+
+responsive-769px.css
+responsive-768px-max.css
+responsive-375px-max.css
