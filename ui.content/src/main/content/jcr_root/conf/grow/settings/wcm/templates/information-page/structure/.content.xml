@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:deviceGroups="[/etc/mobile/groups/responsive]"
+            jcr:primaryType="cq:PageContent"
+            cq:template="/conf/grow/settings/wcm/templates/information-page"
+            sling:resourceType="grow/components/pages/info-dynamic">
+        <root
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="grow/components/common/header"
+                    header="Information Page"
+                    editable="{Boolean}true"/>
+            <leftInfoBlock
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="grow/components/common/article-list"
+                    title="Business"
+                    editable="{Boolean}true"/>
+            <centerInfoBlock
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="grow/components/common/news-list"
+                    title="Shocking News!"
+                    editable="{Boolean}true"/>
+            <rightInfoBlock
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="grow/components/common/article-list"
+                    title="Articles"
+                    editable="{Boolean}true"/>
+            <responsivegrid
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid"
+                    editable="{Boolean}true"
+                    components="[group:Grow]">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="grow/components/common/footer"
+                    footer="All rights reserved"
+                    editable="{Boolean}true"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                        jcr:primaryType="nt:unstructured"
+                        title="Smaller Screen"
+                        width="{Long}420"/>
+                <tablet
+                        jcr:primaryType="nt:unstructured"
+                        title="Tablet"
+                        width="{Long}770"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

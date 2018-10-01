@@ -17,7 +17,8 @@
             <search
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="growdefault/components/content/search"
-                searchRoot="/content/grow/"/>
+                searchRoot="/content/grow/"
+                editable="{Boolean}true"/>
             <navigation
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="growdefault/components/content/navigation"
@@ -25,12 +26,6 @@
             <breadcrumb
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="growdefault/components/content/breadcrumb"/>
-            <responsivegrid
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"
-                editable="{Boolean}true">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
-            </responsivegrid>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
