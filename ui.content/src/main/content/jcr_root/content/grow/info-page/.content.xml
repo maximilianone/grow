@@ -4,7 +4,7 @@
     <jcr:content
         jcr:primaryType="cq:PageContent"
         jcr:title="Information Page"
-        sling:resourceType="grow/components/pages/info-page"
+        sling:resourceType="grow/components/pages/info-page-v1"
         pageTitle="Information Page"
         socialMedia="[facebook]">
     </jcr:content>

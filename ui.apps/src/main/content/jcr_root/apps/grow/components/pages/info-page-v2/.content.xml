@@ -4,5 +4,5 @@
     jcr:description="Information articles page v2"
     jcr:primaryType="cq:Component"
     jcr:title="Information Page v2"
-    sling:resourceSuperType="grow/components/pages/info-page"
+    sling:resourceSuperType="grow/components/pages/info-page-base"
     componentGroup="Grow"/>
