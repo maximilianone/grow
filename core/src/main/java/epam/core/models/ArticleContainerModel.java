@@ -31,7 +31,6 @@ public class ArticleContainerModel {
     }
 
     public List<Article> getArticleList() {
-        LOG.error(articleService.getArticlesByUrl(source).get(0).toString());
         return articleService.getArticlesByUrl(source);
     }
 }
